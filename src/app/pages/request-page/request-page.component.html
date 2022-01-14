@@ -1,0 +1,21 @@
+<h1>Lista de solicitudes</h1>
+<table class="request-table">
+  <tr>
+    <th>Fecha de inicio</th>
+    <th>Fecha de Entrega</th>
+    <th>Tipo de Construccion</th>
+    <th>Posicion x</th>
+    <th>Posicion y</th>
+  </tr>
+  <tr *ngFor="let request of requests">
+    <td>{{request.fechaInicio}}</td>
+    <td>{{request.fechaEntrega}}</td>
+    <td>{{request.tipoConstruccion}}</td>
+    <td>{{request.x}}</td>
+    <td>{{request.y}}</td>
+  </tr>
+</table>
+
+<br>
+
+<a routerLink="/solicitud-form" class="start-button">Nueva Solicitud</a>

@@ -1,0 +1,40 @@
+.request-table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+.request-table td, .request-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.request-table{background-color: #f2f2f2;}
+
+.request-table tr:hover {background-color: #ddd;}
+
+.request-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #242222;
+  color: white;
+}
+
+.start-button {
+  background-color: black;
+  border: 2px solid black;
+  color: white;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  padding: 12px 32px 14px 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.start-button:hover {
+  background-color: white;
+  color: black;
+}

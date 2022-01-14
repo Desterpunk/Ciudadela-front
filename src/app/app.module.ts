@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { MaterialsPageComponent } from './pages/materials-page/materials-page.component';
+import { requestPageComponent } from './pages/request-page/request-page.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +15,12 @@ import { MaterialsPageComponent } from './pages/materials-page/materials-page.co
     HomePageComponent,
     HeaderComponent,
     FooterComponent,
-    MaterialsPageComponent,
+    requestPageComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
