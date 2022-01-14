@@ -1,0 +1,16 @@
+.site-header {
+    background-color: #FEDF9E;
+    margin: 5%;
+
+}
+
+.navbar a {
+    color: black;
+    display: inline-block;
+    margin: 0 4px;
+    text-decoration: none;
+}
+
+.navbar a:first-child {
+    margin: 0 4px 0 0;
+}
