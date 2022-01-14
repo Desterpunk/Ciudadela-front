@@ -8,6 +8,7 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { requestPageComponent } from './pages/request-page/request-page.component';
+import { FormRequestPageComponent } from './pages/form-request-page/form-request-page.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { requestPageComponent } from './pages/request-page/request-page.componen
     HeaderComponent,
     FooterComponent,
     requestPageComponent,
+    FormRequestPageComponent,
   ],
   imports: [
     BrowserModule,

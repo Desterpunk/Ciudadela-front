@@ -1,4 +1,4 @@
-import { RequestI } from './../models/request/request.interface';
+import { RequestI } from '../../models/request/request.interface'; 
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';

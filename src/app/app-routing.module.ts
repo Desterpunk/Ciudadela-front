@@ -1,3 +1,4 @@
+import { FormRequestPageComponent } from './pages/form-request-page/form-request-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { requestPageComponent } from './pages/request-page/request-page.component';
 import { NgModule } from '@angular/core';
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: 'home-page',
     component: HomePageComponent,
+  },
+  {
+    path: 'form-request-page',
+    component: FormRequestPageComponent,
   },
   { path: '',   redirectTo: '/home-page', pathMatch: 'full' },
 ];
