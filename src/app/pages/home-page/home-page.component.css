@@ -1,0 +1,40 @@
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.start-button {
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    padding: 12px 32px 14px 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.start-button:hover {
+    background-color: white;
+    color: black;
+}
+
+main {
+    margin: 0 5%;
+}
+
+.home-page {
+    display: grid;
+    font-size: 24px;
+    grid-template-columns: 50% 50%;
+    line-height: 1.4;
+    margin: 2em auto 0 auto;
+    max-width: 45em;
+    padding: 0;
+}
+
+@media screen and (max-width: 45em) {
+    .home-page { display: block; }
+  }
