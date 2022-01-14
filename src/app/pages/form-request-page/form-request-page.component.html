@@ -1,14 +1,14 @@
 <div>
-    <form action="/action_page.php">
+    <form action="/action_page.php" [formGroup]="requestForm" (ngSubmit)="onSubmit()">
       <label for="fname">Posicion X</label>
-      <input type="text" id="fname" name="firstname" placeholder="X..">
+      <input type="text" id="fname" name="firstname" placeholder="X.." formControlName="x">
   
       <label for="lname">Posicion y</label>
-      <input type="text" id="lname" name="lastname" placeholder="Y..">
+      <input type="text" id="lname" name="lastname" placeholder="Y.." formControlName="y">
   
       <label for="country">Tipo de Construccion</label>
-      <select id="country" name="country">
-        <option value="constructionType" *ngFor="let constructionType of constructionTypes">{{constructionType.nombreTipoConstruccion}}</option>>
+      <select id="country" name="country" formControlName="tipoConstruccion">
+        <option value="{{constructionType.nombreTipoConstruccion}}" *ngFor="let constructionType of constructionTypes">{{constructionType.nombreTipoConstruccion}}</option>>
       </select>
     
       <input type="submit" value="Submit">

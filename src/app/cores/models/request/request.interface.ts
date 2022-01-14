@@ -3,6 +3,6 @@ export interface RequestI{
     tipoConstruccion:string;
     x: number;
     y: number;
-    fechaInicio: Date;
-    fechaEntrega: Date;
+    fechaInicio?: Date;
+    fechaEntrega?: Date;
 }

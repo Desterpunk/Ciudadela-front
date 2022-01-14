@@ -12,11 +12,11 @@ export class requestPageComponent implements OnInit {
   requests: RequestI[] = [];
 
   constructor(
-    private dataSVC: RequestService
+    private requestSVC: RequestService
   ) { }
 
   ngOnInit(): void {
-    this.dataSVC.getAllRequests().subscribe(data => {
+    this.requestSVC.getAllRequests().subscribe(data => {
       this.requests = data;
     })
   }

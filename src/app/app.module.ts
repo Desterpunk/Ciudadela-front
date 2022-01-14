@@ -9,6 +9,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { requestPageComponent } from './pages/request-page/request-page.component';
 import { FormRequestPageComponent } from './pages/form-request-page/form-request-page.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DatePipe } from './pipes/date/date.pipe';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,14 @@ import { FormRequestPageComponent } from './pages/form-request-page/form-request
     FooterComponent,
     requestPageComponent,
     FormRequestPageComponent,
+    DatePipe,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

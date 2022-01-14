@@ -8,6 +8,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class RequestService {
   private urlApi = 'http://localhost:8080/solicitud'
+    // "start": "ng serve --proxy-config proxy.conf.json",
+  requests: RequestI[] = [];
 
   constructor(
     private http: HttpClient
@@ -16,4 +18,10 @@ export class RequestService {
   getAllRequests(): Observable<RequestI[]>{
     return this.http.get<RequestI[]>(this.urlApi);
   }
+
+  addNewRequest(request:RequestI): Observable<RequestI>{
+    return this.http.post<RequestI>(`${this.urlApi}/create`, request);
+  }
+
+
 }
