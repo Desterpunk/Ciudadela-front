@@ -7,7 +7,6 @@
     <th>Posicion x</th>
     <th>Posicion y</th>
   </tr>
-  <div *ngIf="requests != undefined"> 
     <tr  *ngFor="let request of requests">
       <td>{{request.fechaInicio | date}}</td>
       <td>{{request.fechaEntrega}}</td>
@@ -15,7 +14,6 @@
       <td>{{request.x}}</td>
       <td>{{request.y}}</td>
     </tr>
-  </div>
 </table>
 
 <br>

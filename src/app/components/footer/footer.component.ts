@@ -10,6 +10,20 @@ export class FooterComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.saludar();
+  }
+
+  ngOnChange(): void {
+    this.saludar2();
+  }
+
+  saludar() :any {
+    console.log("holaMundo");
+
+  }
+
+  saludar2() :any {
+    console.log("holaMundo2");
   }
 
 }

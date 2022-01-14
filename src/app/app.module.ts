@@ -20,7 +20,6 @@ import { DatePipe } from './pipes/date/date.pipe';
     FooterComponent,
     requestPageComponent,
     FormRequestPageComponent,
-    DatePipe,
   ],
   imports: [
     BrowserModule,
